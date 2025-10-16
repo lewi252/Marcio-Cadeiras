@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Marcio Chair</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 90px;
+            padding-bottom: 40px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            text-align: center;
+            color: #ddd;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        footer {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* 🔧 Carrossel */
+        .carousel {
+            max-width: 800px;
+            margin: 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-item {
+            height: 400px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        /* 📱 Responsivo */
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            main {
+                padding-top: 80px;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .carousel-item {
+                height: 220px;
+            }
+        }
+
+        /* 💰 Tabela de preços */
+        .tabela-precos {
+            margin-top: 30px;
+        }
+
+        .tabela-precos strong {
+            font-size: 20px;
+        }
+
+        .tabela-precos span {
+            display: block;
+            margin: 5px 0;
+        }
+
+        /* 💳 QR Code PIX */
+        .pix-section {
+            margin-top: 50px;
+            text-align: center;
+            background-color: #1c1c1c;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 100, 0.3);
+        }
+
+        .pix-section img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 3px solid #00ff88;
+            background-color: #fff;
+            padding: 5px;
+            margin-top: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pix-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+        }
+
+        .pix-section p {
+            color: #ccc;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .pix-section strong {
+            color: #00ff99;
+        }
+
+        @media (max-width: 576px) {
+            .pix-section img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white" href="#">Marcio Chair</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="ajuda.html">Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="sobre.html">Sobre Nós</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <main class="bg-black">
+        <div class="container text-center bg-dark p-4 rounded-4 shadow">
+            <h1 class="text-warning mb-3">Seja Bem-Vindo</h1>
+            <p>Veja aqui abaixo os nossos produtos disponíveis:</p>
+
+            <!-- Carrossel -->
+            <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="cadeira_junco.webp" alt="Cadeira de Junco">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="cadeira_area.webp" alt="Cadeira de Área">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="vassoura_sintetica.webp" alt="Vassoura Sintética">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="vassoura_caipira.webp" alt="Vassoura Caipira">
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+            </div>
+
+            <!-- Tabela de preços -->
+            <div class="tabela-precos text-danger">
+                <strong class="text-light">TABELA DE PREÇOS</strong>
+                <div class="text-warning mt-2">
+                    <span>Cadeira de Junco (Pronta) = R$ XX</span>
+                    <span>Cadeira de Junco (Conserto) = R$ XX</span>
+                    <span>Cadeira de Área (Pronta) = R$ XX</span>
+                    <span>Cadeira de Área (Conserto) = R$ XX</span>
+                    <span>Vassoura Sintética (Com Cabo) = R$ XX</span>
+                    <span>Vassoura Sintética (Sem Cabo) = R$ XX</span>
+                    <span>Vassoura Caipira (Com Cabo) = R$ XX</span>
+                    <span>Vassoura Caipira (Sem Cabo) = R$ XX</span>
+                </div>
+            </div>
+
+            <!-- QR Code PIX -->
+            <div class="pix-section">
+                <h4 class="text-success mt-4">💳 Pagamento via PIX</h4>
+                <p>Escaneie o QR Code abaixo para realizar seu pagamento de forma rápida e segura:</p>
+                <img src="qrcode.png" alt="QR Code PIX">
+                <p class="mt-3">Ou envie o valor para nossa chave PIX:</p>
+                <p><strong>18 99161-1724</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-auto py-3 bg-gradient">
+        <div class="container">
+            © 2025 Marcio Chair — Todos os direitos reservados
+        </div>
+    </footer>
+
+</body>
+
+</html>
